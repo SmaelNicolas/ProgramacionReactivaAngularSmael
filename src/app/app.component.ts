@@ -8,20 +8,18 @@ import { ApiDataService } from './services/api-data.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'programacionReactivaSmael';
-
-  movies: any[] = [];
-  moviesRateTop$!: Observable<any[]>;
-
-  constructor(private apiDataServices: ApiDataService) {}
-
-  ngOnInit() {
-    this.apiDataServices.getDataApiObservable().subscribe((data) => {
-      this.movies = data.results;
-    });
-
-    console.log(this.moviesRateTop$);
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-
-  ngOnDestroy() {}
+  // title = 'programacionReactivaSmael';
+  // movies: any[] = [];
+  // moviesRateTop$!: Observable<any[]>;
+  // constructor(private apiDataServices: ApiDataService) {}
+  // ngOnInit() {
+  //   this.apiDataServices.getDataApiObservable().subscribe((data) => {
+  //     this.movies = data.results;
+  //   });
+  //   console.log(this.moviesRateTop$);
+  // }
+  // ngOnDestroy() {}
 }

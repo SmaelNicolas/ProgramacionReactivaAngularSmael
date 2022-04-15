@@ -22,7 +22,7 @@ export class ApiDataService {
 
     this.moviesPromise = new Promise((resolve, reject) => {
       this.doFetch(
-        'https://api.themoviedb.org/3/trending/movie/week?api_key=c9c649f8dc1856154cf88a683b935a6e'
+        'https://api.themoviedb.org/3/trending/tv/week?api_key=c9c649f8dc1856154cf88a683b935a6e'
       ).subscribe((data) => {
         this.movies = data.results;
         resolve(this.movies);
